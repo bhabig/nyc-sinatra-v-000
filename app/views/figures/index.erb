@@ -1,0 +1,9 @@
+<%@figures.each do |fig|%>
+  <h1><%=fig.name%></h1>
+  <%fig.landmarks.each do |ldmk|%>
+    <ul><li><%=ldmk.name%><%=ldmk.year_completed%></li><br></ul>
+  <%end%>
+  <%fig.titles.each do |title|%>
+    <ul><li><%=title.name%></li><br></ul>
+  <%end%>
+<%end%>
